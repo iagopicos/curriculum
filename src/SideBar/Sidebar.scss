@@ -1,7 +1,6 @@
 .Sidebar{
   color: #fff;
   background: #222;
-  text-align: center;
   align-items: center;
   padding: 5px;
   flex-basis: 20rem;
@@ -10,21 +9,27 @@
   nav ul{
     list-style-type: none;	  
     padding: 0px;
+    width: 100%;
   }
   .row{
+    margin:0%;
+    height: 50px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
     color: lightgrey;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   
     .text{
-      flex:70%
+      flex:70%;
+      
     }
    
     .icon{
-      flex: 30%
+      flex: 30%;
+      display: grid;
+      place-items: center;
     }
   }
 
