@@ -3,13 +3,11 @@ import { SidebarData, SidebarItem } from './SidebarData'
 export default function Sidebar() {
   return (
     <div className="Sidebar">
-      <header>
         <img
           className='sb-profileImg'
           alt='Profile Image'
           src='https://unavatar.io/iagofernandez94'
         />
-        </header>
         <nav>
           <ul>
             {SidebarData.map(
