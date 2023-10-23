@@ -1,12 +1,13 @@
 import './App.scss';
 import Sidebar from './SideBar/Sidebar'
 import './SideBar/Sidebar.scss'
-import MainContent from './MainContet/MainContent';
+import './MainContent/MainContent.scss'
+import MainContent from './MainContent/MainContent';
 
 function App() {
   return (
     <main className='App'>
-      <Sidebar />  
+      <Sidebar /> 
       <MainContent/>
     </main>
   );
