@@ -1,3 +1,5 @@
+import Timeline from "../Timeline/Timeline";
+
 export default function Home(){
   return(
     <> 
@@ -7,6 +9,14 @@ export default function Home(){
       <h2>
         Developer / Backend Developer
       </h2>
+      <div className='introduction'>
+        <p>
+          Hi, I'm Iago, I'm a software developer from Spain that studied in the University of A coruña.
+          I also spent almost a year doing my Erasmus In the University of Maribor in Slovenia
+
+        </p>
+        <Timeline/>
+      </div>
       <div className='home-content'>
         <ul className="education">
           <li>Universidade da Coruña</li>
