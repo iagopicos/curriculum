@@ -5,8 +5,8 @@ export default function Sidebar() {
     <div className="Sidebar">
         <img
           className='sb-profileImg'
-          alt='Profile Image'
-          src='https://unavatar.io/iagofernandez94'
+          alt='This is me'
+          src='https://unavatar.io/iagopicos'
         />
         <nav>
           <ul>

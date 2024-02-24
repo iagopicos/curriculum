@@ -1,8 +1,8 @@
 import Timeline from "../Timeline/Timeline";
 
-export default function Home(){
-  return(
-    <> 
+export default function Home() {
+  return (
+    <>
       <h1>
         Iago Fernández Picos
       </h1>
@@ -15,8 +15,8 @@ export default function Home(){
           I also spent almost a year doing my Erasmus In the University of Maribor in Slovenia
 
         </p>
-        <Timeline/>
       </div>
+      <Timeline />
       <div className='home-content'>
         <ul className="education">
           <li>Universidade da Coruña</li>
@@ -26,8 +26,6 @@ export default function Home(){
           <li>Java</li>
           <li>Python</li>
         </ul>
-
-
       </div>
     </>
   );

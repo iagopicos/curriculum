@@ -1,17 +1,91 @@
 .timeline{
-  margin: 5em auto;
-  max-width: 34.15em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 30%;
+  align-items: center;
 
+  &:before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+  }
+
+
+  .tm-card{
+    width: 30%;
+    margin: 5px 0 20px 0;
+    position: relative;
+
+    //ajustamos date para que se muestre date en el centro del timeline;
+    .tm-date{
+      justify-content: center;
+      align-items: center;
+      display: block;
+      width: 60px;
+      height: 50px;
+      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -32px;
+      border-radius: 100%;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: white;
+      color: black;
+      border: 2px solid black;
+      box-shadow: 0 0 0 7px white;
+
+      span{
+        display: block;
+        text-align: center;
+      }
+      .tm-day{
+        font-size: 10px;
+      }
+      .tm-month{
+        font-size: 18px;
+      }
+      .tm-year{
+        font-size: 10px;
+      }
+    }
+
+    .tm-title{
+      position: relative;
+      left: -60%;
+      z-index: 0;
+
+      h2{
+        background: black;
+      }
+      
+      h2:after{
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -5px;
+        width: 10px;
+        -webkit-transform: rotate(-45deg);
+        left: -5px;
+      }
+    }
+
+  }
+
+  .tm-card:nth-child(even){
+    .tm-title{
+      left: 60%;
+    }
+  }
 }
 
-.timeline-item{
-  border: 2px solid black;
-  margin:10px;
-  
-  h2{
-    color: black;
-  }
-  p{
-    text-align: center;
-  }
-}
