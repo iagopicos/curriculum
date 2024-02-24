@@ -1,4 +1,5 @@
-import Timeline from "../Timeline/Timeline";
+import {Timeline} from "../Timeline/Timeline";
+import { TIMELINE_DATA } from "../example-timeline";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 
         </p>
       </div>
-      <Timeline />
+      <Timeline/>
       <div className='home-content'>
         <ul className="education">
           <li>Universidade da Coruña</li>
@@ -26,6 +27,7 @@ export default function Home() {
           <li>Java</li>
           <li>Python</li>
         </ul>
+
       </div>
     </>
   );
